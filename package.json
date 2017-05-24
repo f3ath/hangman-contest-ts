@@ -1,0 +1,26 @@
+{
+  "name": "hangman-contest-ts",
+  "version": "1.0.0",
+  "description": "OOP design contest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-ts src/**/*.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f3ath/hangman-contest-ts.git"
+  },
+  "author": "Alexey Karapetov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/f3ath/hangman-contest-ts/issues"
+  },
+  "homepage": "https://github.com/f3ath/hangman-contest-ts#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.5.47",
+    "@types/node": "^7.0.22",
+    "jasmine-ts": "^0.1.2"
+  }
+}
