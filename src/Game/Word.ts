@@ -3,23 +3,23 @@ export class Word {
     }
 
     static fromString(word: string): Word {
-        return new Word(word.split('').map((c) => new HiddenChar(c)));
+        return new Word(word.split('').map(c => new HiddenChar(c)));
     }
 
     toString(): string {
-        return this.chars.map((c) => c.toString()).join('');
+        return this.chars.map(c => c.toString()).join('');
     }
 
     isOpen(): boolean {
-        return !this.chars.some((c) => c.isHidden());
+        return !this.chars.some(c => c.isHidden());
     }
 
     hasHiddenChar(char: string): boolean {
-        return this.chars.some((c) => c.isHidden() && c.isEqualTo(char));
+        return this.chars.some(c => c.isHidden() && c.isEqualTo(char));
     }
 
     withOpened(char: string): Word {
-        return new Word(this.chars.map((c) => c.isEqualTo(char) ? c.opened() : c));
+        return new Word(this.chars.map(c => c.isEqualTo(char) ? c.opened() : c));
     }
 }
 
